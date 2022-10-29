@@ -1,0 +1,33 @@
+@use '../global';
+
+.btn-namb {
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    color: #404B52;
+    @include global.font-500;
+    width: 25px;
+    height: 24px;
+    background: #F5F5F5;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+
+    @media (max-width: 765px) {
+        width: 21px;
+        height: 20px;
+
+    }
+
+    &:hover {
+        color: #ffff;
+        background: #5932EA;
+        border: 1px solid #5932EA;
+    }
+
+}
+
+.btn-active {
+    color: #ffff;
+    background: #5932EA;
+    border: 1px solid #5932EA;
+}

@@ -1,0 +1,36 @@
+
+
+- const users = [{name:'Jane Cooper', company:'Microsoft', phone:'(225) 555-0118', email:'jane@microsoft.com', country:'United States'},{name:'Floyd Miles', company:'Yahoo', phone:'(205) 555-0100', email:'floyd@yahoo.com', country:'Kiribati'},{name:'Ronald Richards', company:'Adobe', phone:'(302) 555-0107', email:'ronald@adobe.com', country:'Israel'},{name:'Marvin McKinney', company:'Tesla', phone:'(252) 555-0126', email:'marvin@tesla.com', country:'Iran'},{name:'Jerome Bell', company:'Google', phone:'(629) 555-0129', email:'jerome@google.com', country:'Réunion'},{name:'Kathryn Murphy', company:'Microsoft', phone:'(406) 555-0120', email:'kathryn@microsoft.com', country:'Curaçao'},{name:'Jacob Jones', company:'Yahoo', phone:'(208) 555-0112', email:'jacob@yahoo.com', country:'Brazil'},{name:'Kristin Watson', company:'Facebook', phone:'(704) 555-0127', email:'kristin@facebook.com', country:'Åland Islands'},];
+ul.customers__users--name Customer Name
+    each user in users
+        li(class='customers__users--name--list') #{user.name}
+ul.customers__users--company Company
+    each company in users
+        li(class='customers__users--company--list') #{company.company}
+ul.customers__users--phone Phone Number
+    each phone in users
+        li(class='customers__users--phone--list') #{phone.phone}
+ul.customers__users--email Email
+    each email in users
+        li(class='customers__users--email--list') #{email.email}
+ul.customers__users--country Country
+    each country in users
+        li(class='customers__users--country--list') #{country.country}
+ul.customers__users--status Status
+    li.customers__users--status--btn
+        label(for="status" class='status-active') Active
+    li.customers__users--status--btn
+        label(for="status" class='status-inactive') Inactive
+    li.customers__users--status--btn
+        label(for="status" class='status-inactive') Inactive
+    li.customers__users--status--btn
+        label(for="status" class='status-active') Active
+    li.customers__users--status--btn
+        label(for="status" class='status-active') Active
+    li.customers__users--status--btn
+        label(for="status" class='status-active') Active
+    li.customers__users--status--btn
+        label(for="status" class='status-active') Active
+    li.customers__users--status--btn
+        label(for="status" class='status-inactive') Inactive
+

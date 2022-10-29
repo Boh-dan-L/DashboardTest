@@ -1,0 +1,75 @@
+
+
+.users-mob
+    .users-mob__container
+        .users-mob__block
+            div(class = 'users-mob__name-mob ')   Jane Cooper
+            ul(class='users-mob__info-mob')
+                each inf, key in {Company:'Microsoft', Phone:'(225) 555-0118', Email:'jane@microsoft.com', Country:'United States'}
+                    li(class='users-mob__info-mob--key') #{key}: &nbsp
+                        span(class='users-mob__info-mob--name') #{inf}
+        .users-mob__status
+            label(for="status" class='status-active') On
+    .users-mob__container
+        .users-mob__block
+            div(class = 'users-mob__name-mob ')   Floyd Miles
+            ul(class='users-mob__info-mob ')
+                each inf, key in { Company:'Yahoo', Phone:'(205) 555-0100', Email:'floyd@yahoo.com', Country:'Kiribati'}
+                    li(class='users-mob__info-mob--key') #{key}: &nbsp
+                        span(class='users-mob__info-mob--name') #{inf}
+        .users-mob__status
+            label(for="status" class='status-inactive') Off
+    .users-mob__container
+        .users-mob__block
+            div(class = 'users-mob__name-mob ')   Ronald Richards
+            ul(class='users-mob__info-mob ')
+                each inf, key in { Company:'Adobe', Phone:'(302) 555-0107', Email:'ronald@adobe.com', Country:'Israel'}
+                    li(class='users-mob__info-mob--key') #{key}: &nbsp
+                        span(class='users-mob__info-mob--name') #{inf}
+        .users-mob__status
+            label(for="status" class='status-inactive') Off
+    .users-mob__container
+        .users-mob__block
+            div(class = 'users-mob__name-mob')   Marvin McKinney
+            ul(class='users-mob__info-mob')
+                each inf, key in {Company:'Tesla', Phone:'(252) 555-0126', Email:'marvin@tesla.com', Country:'Iran'}
+                    li(class='users-mob__info-mob--key') #{key}: &nbsp
+                        span(class='users-mob__info-mob--name') #{inf}
+        .users-mob__status
+            label(for="status" class='status-active') On
+    .users-mob__container
+        .users-mob__block
+            div(class = 'users-mob__name-mob')  Jerome Bell
+            ul(class='users-mob__info-mob')
+                each inf, key in { Company:'Google', Phone:'(629) 555-0129', Email:'jerome@google.com', Country:'Réunion'}
+                    li(class='users-mob__info-mob--key') #{key}: &nbsp
+                        span(class='users-mob__info-mob--name') #{inf}
+        .users-mob__status
+            label(for="status" class='status-active') On
+    .users-mob__container
+        .users-mob__block
+            div(class = 'users-mob__name-mob')  Kathryn Murphy
+            ul(class='users-mob__info-mob')
+                each inf, key in { Company:'Microsoft', Phone:'(406) 555-0120', Email:'kathryn@microsoft.com', Country:'Curaçao'}
+                    li(class='users-mob__info-mob--key') #{key}: &nbsp
+                        span(class='users-mob__info-mob--name') #{inf}
+        .users-mob__status
+            label(for="status" class='status-active') On
+    .users-mob__container
+        .users-mob__block
+            div(class = 'users-mob__name-mob')  Jacob Jones
+            ul(class='users-mob__info-mob')
+                each inf, key in { Company:'Yahoo', Phone:'(208) 555-0112', Email:'jacob@yahoo.com', Country:'Brazil'}
+                    li(class='users-mob__info-mob--key') #{key}: &nbsp
+                        span(class='users-mob__info-mob--name') #{inf}
+        .users-mob__status
+            label(for="status" class='status-active') On
+    .users-mob__container
+        .users-mob__block
+            div(class = 'users-mob__name-mob')   Kristin Watson
+            ul(class='users-mob__info-mob')
+                each inf, key in {Company:'Facebook', Phone:'(704) 555-0127', Email:'kristin@facebook.com', Country:'Åland Islands'}
+                    li(class='users-mob__info-mob--key') #{key}: &nbsp
+                        span(class='users-mob__info-mob--name') #{inf}
+        .users-mob__status
+            label(for="status" class='status-inactive') Off

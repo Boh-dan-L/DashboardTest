@@ -1,0 +1,81 @@
+
+@use './global';
+
+.users-mob {
+
+    @media (min-width: 905px) {
+        display: none;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    &__block {
+        flex-grow: 1;
+    }
+
+    &__name-mob {
+        @include global.font-500;
+        font-size: 12px;
+        line-height: 18px;
+        padding-bottom: 10px;
+        padding: 4px 0 0 4px;
+        background: #F5F5F5;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 15px;
+            height: 12px;
+            background-image: url(../images/Icons/arrow.svg);
+            background-size: contain;
+            transform: rotate(89deg);
+            background-repeat: no-repeat;
+            background-position-x: 4px;
+            margin-left: 4px;
+            transition: 0.3s all;
+        }
+    }
+
+    &__info-mob {
+        display: flex;
+        flex-direction: column;
+        @include global.font-500;
+        list-style: none;
+        font-size: 12px;
+        line-height: 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.3s all;
+        padding: 0px 0 0 4px;
+
+        &--key {
+            color: #B5B7C0;
+            margin-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #EEEEEE;
+        }
+
+        &--name {
+            color: #292D32;
+        }
+    }
+
+    &__status {
+        @include global.font-500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #B5B7C0;
+    }
+}
+
+
+.arrow-on {
+    &::after {
+        transform: rotate(-89deg);
+        background-position-x: -1px
+    }
+}

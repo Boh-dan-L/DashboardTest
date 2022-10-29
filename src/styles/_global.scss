@@ -1,7 +1,61 @@
 
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin font-400 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin font-500 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+}
+
+@mixin font-600 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+}
+
+.body {
+    display: flex;
+    background: #FAFBFF;
+
+    @media (max-width: 905px) {
+        height: 100vh;
+    }
+}
+
+
+.content {
+    padding: 41px 95px 18% 71px;
+    flex-grow: 1;
+
+    @media (max-width: 1240px) {
+        padding: 3% 6% 11% 6%;
+    }
+
+    &__greeting {
+        @include font-500;
+        font-size: 24px;
+        line-height: 36px;
+        color: #000000;
+        margin-bottom: 51px;
+
+        @media (max-width: 1240px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        @media (max-width: 905px) {
+            text-align: center;
+        }
+    }
+
 }

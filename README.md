@@ -24,7 +24,7 @@ Basic configuration of Webpack.
     "bootstrap": "^5.1.3",
     "jquery": "^3.6.0"
 
-## Start using for a new project
+## Start using
 Clone the repo
 Run npm i to install dependencies
 Run commands in terminal:
