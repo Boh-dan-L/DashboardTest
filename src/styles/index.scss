@@ -3,7 +3,9 @@
 @use 'fonts';
 @forward 'global';
 @use 'nav';
-@use 'customers';
+@use './customers/customers';
+@use './customers/users';
+@use './customers/footer-customer';
 @use './buttons/button-arrow';
 @use './buttons/button-namber';
-@use './users-mob';
+@use './customers/users-mob';

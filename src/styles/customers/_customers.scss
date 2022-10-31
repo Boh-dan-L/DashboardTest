@@ -1,0 +1,111 @@
+@use '../global';
+
+.customers {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+    border-radius: 30px;
+    padding: 30px 0 40px;
+    position: relative;
+
+    @media (max-width: 905px) {
+        max-width: 500px;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        padding: 0 40px 0 38px;
+
+        @media (max-width: 905px) {
+            flex-direction: column;
+            align-items: center;
+            max-width: 100%;
+        }
+
+        &--text {
+
+            @media (max-width: 905px) {
+                text-align: center;
+            }
+
+            &--title {
+                @include global.font-600;
+                font-size: 22px;
+                line-height: 33px;
+                letter-spacing: -0.01em;
+                color: #000000;
+                margin-bottom: 7px;
+
+                @media (max-width: 1240px) {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+
+            &--subtitle {
+                @include global.font-400;
+                font-size: 14px;
+                line-height: 21px;
+                letter-spacing: -0.01em;
+                color: #16C098;
+
+                @media (max-width: 1240px) {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+            }
+        }
+
+        &--search {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            &--input {
+                @include global.font-400;
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: -0.01em;
+                color: #B5B7C0;
+                width: 216px;
+                height: 38px;
+                background: #F9FBFF url(../images/Icons/search.svg) 8px no-repeat;
+                border-radius: 10px;
+                outline: none;
+                border: solid #F9FBFF;
+                padding: 11px 40px;
+
+                @media (max-width: 1240px) {
+                    width: 200px;
+                    height: 30px;
+                }
+
+                @media (max-width: 1024px) {
+                    width: 170px;
+                    height: 30px;
+                }
+
+                @media (max-width: 905px) {
+                    width: 150px;
+                    height: 25px;
+                    margin-top: 15px;
+                }
+
+                &::placeholder {
+                    @include global.font-400;
+                    font-size: 12px;
+                    line-height: 18px;
+                    letter-spacing: -0.01em;
+                    color: #B5B7C0;
+                }
+
+                &:focus-visible {
+                    border: 1px solid #EEEEEE;
+                }
+            }
+        }
+    }
+}
+
